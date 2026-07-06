@@ -1,15 +1,15 @@
 \babel@toc {italian}{}\relax 
-\babel@toc {italian}{}\relax 
 \contentsline {section}{\numberline {1}Obiettivo dell'esperienza}{2}{}%
 \contentsline {section}{\numberline {2}Cenni teorici}{2}{}%
 \contentsline {subsection}{\numberline {2.1}Calore latente di vaporizzazione dell'azoto}{2}{}%
 \contentsline {subsection}{\numberline {2.2}Calore specifico medio}{3}{}%
-\contentsline {section}{\numberline {3}Apparato sperimentale}{4}{}%
-\contentsline {section}{\numberline {4}Procedura sperimentale}{5}{}%
-\contentsline {subsection}{\numberline {4.1}Calore latente di vaporizzazione dell'azoto}{5}{}%
-\contentsline {subsection}{\numberline {4.2}Calore specifico medio}{5}{}%
-\contentsline {section}{\numberline {5}Presa dati}{5}{}%
-\contentsline {subsection}{\numberline {5.1}Calore latente di vaporizzazione dell'azoto}{7}{}%
-\contentsline {subsection}{\numberline {5.2}Calore specifico medio del piombo}{7}{}%
-\contentsline {section}{\numberline {6}Analisi dati}{7}{}%
-\contentsline {section}{\numberline {7}Conclusioni}{7}{}%
+\contentsline {section}{\numberline {3}Determinazione del Calore Latente di Evaporazione dell'Azoto Liquido}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Stima Preliminare della Potenza Termica e Dimensionamento Elettrico}{4}{}%
+\contentsline {subsection}{\numberline {3.2}Procedura di Misura a Tre Fasi}{5}{}%
+\contentsline {subsection}{\numberline {3.3}Analisi Dati: Il Metodo Grafico}{5}{}%
+\contentsline {subsection}{\numberline {3.4}Estrapolazione Grafica dei Background}{6}{}%
+\contentsline {subsection}{\numberline {3.5}Propagazione dell'Incertezza sulla Massa}{8}{}%
+\contentsline {subsection}{\numberline {3.6}Calcolo Finale del Calore Latente $\lambda _f$}{8}{}%
+\contentsline {subsection}{\numberline {3.7}Calore specifico medio del piombo}{8}{}%
+\contentsline {section}{\numberline {4}Analisi dati}{8}{}%
+\contentsline {section}{\numberline {5}Conclusioni}{8}{}%
