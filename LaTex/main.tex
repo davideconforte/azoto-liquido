@@ -638,7 +638,116 @@ Arrotondando il risultato in conformità con le cifre significative dell'incerte
 \lambda_f = (235 \pm 19)\text{ J/g}
 \end{equation}
 Il valore di riferimento della letteratura scientifica ($\lambda_{\text{lit}} \approx 199\text{ J/g}$) è pienamente compatibile con l'intervallo di confidenza della misura effettuata, ricadendo all'interno della barra d'errore sperimentale.
-\subsection{Calore specifico medio del piombo}
+
+\subsection{Estrapolazione Grafica dei Background (Seconda Sessione)}
+%METTERE TABELLA DATI SECONDO TRY VEDI COME SOPRA%
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \textbf{Regressione Lineare Fase I} \\
+    \textit{(Circuito Aperto - Iniziale)}
+    \begin{align*}
+        B_1 &= -0.017048 \text{ g/s} \\
+        A_1 &= 1479.145451 \text{ g} \\
+        \Delta B_1 &= 2.5257 \times 10^{-4} \text{ g/s} \\
+        \Delta A_1 &= 0.015726 \text{ g}
+    \end{align*}
+    Valutazione a $t_m = 175.82\text{ s}$:
+    \begin{equation*}
+        m_{\text{Fase I}}(t_m) = 1476.148\text{ g}
+    \end{equation*}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \textbf{Regressione Lineare Fase III} \\
+    \textit{(Circuito Aperto - Traslata)}
+    \begin{align*}
+        B_3 &= -0.012907 \text{ g/s} \\
+        A_3 &= 1473.505080 \text{ g} \\
+        \Delta B_3 &= 4.6999 \times 10^{-4} \text{ g/s} \\
+        \Delta A_3 &= 0.146640 \text{ g}
+    \end{align*}
+    Valutazione a $t_m = 175.82\text{ s}$ ($t_{\text{trasl}} = 0$):
+    \begin{equation*}
+        m_{\text{Fase III}}(t_m) = 1471.236\text{ g}
+    \end{equation*}
+\end{minipage}
+
+\begin{figure}[htbp]
+    \centering
+    % Regola la larghezza (0.85 o 0.9 della pagina è l'ideale per la leggibilità)
+    \includegraphics[width=0.85\textwidth]{../Grafici/Graficolatente_2.png}
+    
+    \caption{\textbf{Andamento della massa in funzione del tempo ed estrapolazione dei background.} }
+    
+    
+    \label{fig:grafico_estrapolazione2}
+\end{figure}
+
+\vspace{0.4cm}
+La massa netta $\Delta m$ evaporata a causa del solo effetto Joule della resistenza corrisponde alla differenza verticale tra le due rette di tendenza valutata all'istante mediano $t_m = 175.82\text{ s}$:
+\begin{equation}
+\Delta m = m_{\text{Fase I}}(t_m) - m_{\text{Fase III}}(t_m) = 1476.148\text{ g} - 1471.236\text{ g} = 4.912\text{ g}
+\end{equation}
+
+\subsection{Propagazione dell'Incertezza sulla Massa (Seconda Sessione)}
+L'incertezza sulla massa estrapolata al tempo $t_m$ per ciascuna fase risente degli errori accoppiati dell'intercetta ($\Delta A$) e della pendenza ($\Delta B$) ricavati dal fit. Nel sistema di riferimento temporale adottato per l'analisi, si ottengono i seguenti contributi:
+\begin{align}
+\Delta(\Delta m|_{\text{Fase I}}) &= \Delta A_1 + t_m \cdot \Delta B_1 = 0.015726 + 175.82 \cdot (2.5257 \times 10^{-4}) \approx 0.060\text{ g} \\
+\Delta(\Delta m|_{\text{Fase III}}) &= \Delta A_3 \approx 0.147\text{ g}
+\end{align}
+Essendo la Fase III interpolata rispetto alla variabile temporale traslata, l'incertezza all'istante mediano coincide direttamente con l'errore dell'intercetta $\Delta A_3$ calcolato dal software, escludendo l'allargamento fittizio a ventaglio causato dal fattore di proiezione lineare.
+
+L'errore assoluto complessivo sulla massa netta $\Delta(\Delta m)$ si ricava dalla somma diretta dei singoli contributi delle due regioni indipendenti:
+\begin{equation}
+\Delta(\Delta m) = \Delta(\Delta m|_{\text{Fase I}}) + \Delta(\Delta m|_{\text{Fase III}}) = 0.060\text{ g} + 0.147\text{ g} = 0.207\text{ g}
+\end{equation}
+
+\subsection{Calcolo Finale del Calore Latente $\lambda_f$ (Seconda Sessione)}
+Utilizzando i parametri elettrici impostati sul generatore ($V = 8.3\text{ V}$, $I = 0.81\text{ A}$) e la durata effettiva della Fase II ($\Delta t = 125.50\text{ s}$), il valore centrale del calore latente di evaporazione dell'azoto liquido risulta:
+\begin{equation}
+\lambda_f = \frac{V \cdot I \cdot \Delta t}{\Delta m} = \frac{8.3\text{ V} \cdot 0.81\text{ A} \cdot 125.50\text{ s}}{4.912\text{ g}} \approx 171.76\text{ J/g}
+\end{equation}
+
+Assumendo come incertezze strumentali della postazione di misura i valori $\Delta V = 0.1\text{ V}$, $\Delta I = 0.01\text{ A} $ e per il cronometro digitale la sensibilità di $\Delta(\Delta t) = 0.01\text{ s}$, si procede alla propagazione finale dell'errore assoluto $\Delta \lambda_f$:
+\begin{equation}
+\Delta \lambda_f = \lambda_f \left( \frac{\Delta V}{V} + \frac{\Delta I}{I} + \frac{\Delta(\Delta m)}{\Delta m} + \frac{\Delta(\Delta t)}{\Delta t} \right)
+\end{equation}
+\begin{equation}
+\Delta \lambda_f = 171.76 \cdot \left( \frac{0.1}{8.3} + \frac{0.01}{0.81} + \frac{0.207}{4.912} + \frac{0.01}{125.50} \right) \approx 11.44\text{ J/g}
+\end{equation}
+
+Arrotondando il risultato in conformità con le cifre significative dell'incertezza calcolata, la misura finale viene espressa come:
+\begin{equation}
+\lambda_f = (172 \pm 11)\text{ J/g}
+\end{equation}
+\section{Calore specifico medio di Grafite e Piombo}
+\subsection{Metodologia di Calcolo dei Calori Specifici Medi}
+La determinazione sperimentale del calore specifico medio dei campioni di grafite e piombo si basa sul principio di conservazione dell'energia all'interno del sistema calorimetrico. Assumendo il vaso Dewar come un sistema adiabatico ideale, tutto il calore ceduto dal campione caldo durante il transitorio di raffreddamento viene interamente assorbito dall'azoto liquido, provocandone l'evaporazione. Il bilancio termico si esprime come:
+\begin{equation}
+    Q_{\text{assorbito}} = Q_{\text{ceduto}}
+\end{equation}
+
+Il calore assorbito dall'azoto liquido per l'evaporazione della massa netta $\Delta m_{\text{azoto}}$ (opportunamente depurata dal background termico ambientale tramite estrapolazione lineare) è legato al calore latente di evaporazione $\lambda_f$ misurato nella prima parte dell'esperienza:
+\begin{equation}
+    Q_{\text{assorbito}} = \Delta m_{\text{azoto}} \cdot \lambda_f
+\end{equation}
+
+Il calore ceduto dal corpo immerso, nel passaggio dalla temperatura ambiente $T_{\text{amb}}$ alla temperatura di ebollizione dell'azoto liquido $T_{\text{azoto}} \approx 77.3\text{ K}$, dipende dalla massa del campione $M_{\text{campione}}$ e dal suo calore specifico medio $c$ espresso in $\text{J}/(\text{g}\cdot\text{K})$:
+\begin{equation}
+    Q_{\text{ceduto}} = M_{\text{campione}} \cdot c \cdot (T_{\text{amb}} - T_{\text{azoto}})
+\end{equation}
+
+Uguagliando le due espressioni e isolando la capacità termica specifica del materiale, si ottiene la relazione fondamentale in unità del Sistema Internazionale:
+\begin{equation}
+    c = \frac{\Delta m_{\text{azoto}} \cdot \lambda_f}{M_{\text{campione}} \cdot (T_{\text{amb}} - T_{\text{azoto}})}
+\end{equation}
+
+Al fine di consentire un confronto diretto con i valori teorici integrati numericamente tramite lo script, è necessario convertire il risultato in calore specifico medio molare $C_m$, misurato in $\text{cal}/(\text{mol}\cdot\text{K})$. Introducendo la massa molare del materiale $W$ e il fattore di conversione equivalente del calore ($1\text{ cal} = 4.184\text{ J}$), la formula finale di calcolo applicata all'analisi dei dati risulta:
+\begin{equation}
+    C_m = \frac{\Delta m_{\text{azoto}} \cdot \lambda_f}{M_{\text{campione}} \cdot (T_{\text{amb}} - T_{\text{azoto}})} \cdot \frac{W}{4.184}
+\end{equation}
 
 
 
