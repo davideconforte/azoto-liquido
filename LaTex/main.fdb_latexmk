@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1783510715.80939 "/home/eddi/Desktop/Lab-Meccanica/azoto-liquido/LaTex/main.tex" "main.pdf" "main" 1783510716.27324 0
+["pdflatex"] 1783511750.44905 "/home/eddi/Desktop/Lab-Meccanica/azoto-liquido/LaTex/main.tex" "main.pdf" "main" 1783511750.88756 0
   "../Grafici/Graficolatente_1.png" 1783510375.37863 21840 9d3487c1ecaeb3d7f16e3dbc4cd915e2 ""
   "../Grafici/Graficolatente_2.png" 1783510375.37896 21019 833fcac05324a86cbb52b2a73217991f ""
   "/etc/texmf/web2c/texmf.cnf" 1771968813.84324 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/eddi/Desktop/Lab-Meccanica/azoto-liquido/LaTex/main.tex" 1783510715.57252 34977 7a99151cdadca7aa9013e80f5836edde ""
+  "/home/eddi/Desktop/Lab-Meccanica/azoto-liquido/LaTex/main.tex" 1783511750.28894 36628 6276ca1e7879d3b52fc90b3484a4c550 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm" 1246382020 1120 200be8b775682cdf80acad4be5ef57e4 ""
@@ -101,9 +101,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1772031694.36836 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1772031713 8213557 43cd8f209ca212202fad7d3a4d0f6a52 ""
-  "main.aux" 1783510716.23552 4050 c1fcd0b50744ce22745278ca0ed6ca35 "pdflatex"
-  "main.tex" 1783510715.57252 34977 7a99151cdadca7aa9013e80f5836edde ""
-  "main.toc" 1783510716.23652 1656 6e754e8aa4fd60b475bf5ca0c23996e4 "pdflatex"
+  "main.aux" 1783511750.84994 4287 96b8916e9b515bc5048ace1b351c2581 "pdflatex"
+  "main.tex" 1783511750.28894 36628 6276ca1e7879d3b52fc90b3484a4c550 ""
+  "main.toc" 1783511750.84994 1656 14510ce2f0bec80ee59cfbc0f52079f1 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
