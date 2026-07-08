@@ -398,17 +398,17 @@ termico con l'ambiente.
 L'esperimento si propone di misurare il calore latente di evaporazione dell'azoto liquido ($\lambda_f$). In via preliminare, è stata effettuata una stima della potenza termica $P$ necessaria a far evaporare una massa di azoto $m = 10\text{ g}$ in un intervallo di tempo $\Delta t = 300\text{ s}$ (pari a 5 minuti). 
 
 Assumendo come valore di riferimento da manuale per il calore latente di evaporazione dell'azoto il valore $L_e \approx 199\text{ J/g}$, la potenza teorica necessaria risulta:
-\begin{equation}
+\begin{equation*}
 P = \frac{Q}{\Delta t} = \frac{m \cdot L_e}{\Delta t} = \frac{10\text{ g} \cdot 199\text{ J/g}}{300\text{ s}} \approx 6.63\text{ W}
-\end{equation}
+\end{equation*}
 
 Per fornire tale potenza termica mediante effetto Joule, si è utilizzata una resistenza elettrica nota pari a $R = 10.3\ \Omega$ immersa nel vaso Dewar contenente il liquido. I parametri elettrici di funzionamento (corrente $I$ e tensione $V$) necessari per erogare la potenza target sono stati calcolati invertendo le relazioni della potenza elettrica:
-\begin{equation}
+\begin{equation*}
 I = \sqrt{\frac{P}{R}} = \sqrt{\frac{6.63\text{ W}}{10.3\ \Omega}} \approx 0.802\text{ A}
-\end{equation}
-\begin{equation}
+\end{equation*}
+\begin{equation*}
 V = R \cdot I = 10.3\ \Omega \cdot 0.81\text{ A} \approx 8.34\text{ V}
-\end{equation}
+\end{equation*}
 I valori sperimentali effettivamente impostati sul generatore sono stati fissati a $I \approx 0.81\text{ A}$ e $V \approx 8.3\text{ V}$, corrispondenti a una potenza reale dissipata $W_R = V \cdot I \approx 6.72\text{ W}$.
 
 \subsection{Procedura di Misura a Tre Fasi}
@@ -421,30 +421,30 @@ Per isolare la frazione di azoto evaporata a causa della potenza elettrica rispe
 
 \subsection{Analisi Dati: Il Metodo Grafico}
 Per l'estrazione del calore latente si è adottato il metodo grafico (o delle estrapolazioni). Definiti $t_{\text{start}}$ e $t_{\text{stop}}$ come gli istanti di accensione e spegnimento della resistenza (estremi della Fase II), si individua l'istante temporale medio:
-\begin{equation}
+\begin{equation*}
 t_m = \frac{t_{\text{start}} + t_{\text{stop}}}{2}
-\end{equation}
+\end{equation*}
 
 Si esegue l'estrapolazione lineare delle rette di tendenza della Fase I e della Fase III fino al tempo centrale $t_m$. La distanza verticale tra le due rette valutata in $t_m$ fornisce direttamente la massa netta $\Delta m$ evaporata a causa della sola resistenza elettrica durante l'intera Fase II:
-\begin{equation}
+\begin{equation*}
 \Delta m = m_{\text{Fase I}}(t_m) - m_{\text{Fase III}}(t_m)
-\end{equation}
+\end{equation*}
 
 Il calore latente di evaporazione viene quindi calcolato come:
-\begin{equation}
+\begin{equation*}
 \lambda_f = \frac{W_R \cdot \Delta t}{\Delta m} = \frac{V I \Delta t}{\Delta m}
-\end{equation}
+\end{equation*}
 dove $\Delta t = t_{\text{stop}} - t_{\text{start}}$.
 
 L'incertezza sulla massa netta $\Delta(\Delta m)$ viene stimata tracciando le rette a pendenza massima e minima per le Fasi I e III, estrapolandone i valori a $t_m$:
-\begin{equation}
+\begin{equation*}
 \Delta(\Delta m) = \Delta(\Delta m|_{\text{Fase I}}) + \Delta(\Delta m|_{\text{Fase III}})
-\end{equation}
+\end{equation*}
 
 Infine, propagando gli errori per la grandezza $\lambda_f$ espressa come prodotto e quoziente di variabili, l'incertezza assoluta $\Delta \lambda_f$ risulta:
-\begin{equation}
+\begin{equation*}
 \Delta \lambda_f = \lambda_f \left( \frac{\Delta V}{V} + \frac{\Delta I}{I} + \frac{\Delta(\Delta m)}{\Delta m} + \frac{\Delta(\Delta t)}{\Delta t} \right)
-\end{equation}
+\end{equation*}
 
 \begin{table}[htbp]
 \centering
@@ -587,9 +587,9 @@ I dati sperimentali di massa e tempo relativi alla Fase I e alla Fase III, ripor
 
 \vspace{0.4cm}
 La massa netta $\Delta m$ evaporata a causa del solo effetto Joule della resistenza corrisponde alla differenza verticale tra le due rette di tendenza valutata all'istante mediano $t_m = 454.865\text{ s}$:
-\begin{equation}
+\begin{equation*}
 \Delta m = m_{\text{Fase I}}(t_m) - m_{\text{Fase III}}(t_m) = 1596.382\text{ g} - 1587.919\text{ g} = 8.464\text{ g}
-\end{equation}
+\end{equation*}
 \begin{figure}[htbp]
     \centering
     % Regola la larghezza (0.85 o 0.9 della pagina è l'ideale per la leggibilità)
@@ -608,35 +608,35 @@ La massa netta $\Delta m$ evaporata a causa del solo effetto Joule della resiste
 \end{figure}
 \subsection{Propagazione dell'Incertezza sulla Massa}
 L'incertezza sulla massa estrapolata al tempo $t_m$ per ciascuna fase risente degli errori accoppiati dell'intercetta ($\Delta A$) e della pendenza ($\Delta B$) ricavati dal fit. Nel sistema di riferimento temporale adottato per l'analisi, si ottengono i seguenti contributi:
-\begin{align}
+\begin{align*}
 \Delta(\Delta m|_{\text{Fase I}}) &= \Delta A_1 + t_m \cdot \Delta B_1 = 0.014506 + 454.865 \cdot (8.6300 \times 10^{-5}) \approx 0.054\text{ g} \\
 \Delta(\Delta m|_{\text{Fase III}}) &= \Delta A_3 \approx 0.411\text{ g}
-\end{align}
+\end{align*}
 Essendo la Fase III interpolata rispetto alla variabile temporale traslata, l'incertezza all'istante mediano coincide direttamente con l'errore dell'intercetta $\Delta A_3$ calcolato dal software, escludendo l'allargamento fittizio a ventaglio causato dal fattore di proiezione lineare.
 
 L'errore assoluto complessivo sulla massa netta $\Delta(\Delta m)$ si ricava dalla somma diretta dei singoli contributi delle due regioni indipendenti:
-\begin{equation}
+\begin{equation*}
 \Delta(\Delta m) = \Delta(\Delta m|_{\text{Fase I}}) + \Delta(\Delta m|_{\text{Fase III}}) = 0.054\text{ g} + 0.411\text{ g} = 0.465\text{ g}
-\end{equation}
+\end{equation*}
 
 \subsection{Calcolo Finale del Calore Latente $\lambda_f$}
 Utilizzando i parametri elettrici impostati sul generatore ($V = 8.3\text{ V}$, $I = 0.81\text{ A}$) e la durata effettiva della Fase II ($\Delta t = 296.33\text{ s}$), il valore centrale del calore latente di evaporazione dell'azoto liquido risulta:
-\begin{equation}
+\begin{equation*}
 \lambda_f = \frac{V \cdot I \cdot \Delta t}{\Delta m} = \frac{8.3\text{ V} \cdot 0.81\text{ A} \cdot 296.33\text{ s}}{8.464\text{ g}} \approx 235.39\text{ J/g}
-\end{equation}
+\end{equation*}
 
 Assumendo come incertezze strumentali della postazione di misura i valori $\Delta V = 0.1\text{ V}$, $\Delta I = 0.01\text{ A}$ e per il cronometro digitale la sensibilità di $\Delta(\Delta t) = 0.01\text{ s}$, si procede alla propagazione finale dell'errore assoluto $\Delta \lambda_f$:
-\begin{equation}
+\begin{equation*}
 \Delta \lambda_f = \lambda_f \left( \frac{\Delta V}{V} + \frac{\Delta I}{I} + \frac{\Delta(\Delta m)}{\Delta m} + \frac{\Delta(\Delta t)}{\Delta t} \right)
-\end{equation}
-\begin{equation}
+\end{equation*}
+\begin{equation*}
 \Delta \lambda_f = 235.39 \cdot \left( \frac{0.1}{8.3} + \frac{0.01}{0.81} + \frac{0.465}{8.464} + \frac{0.01}{296.33} \right) \approx 18.67\text{ J/g}
-\end{equation}
+\end{equation*}
 
 Arrotondando il risultato in conformità con le cifre significative dell'incertezza calcolata, la misura finale viene espressa come:
-\begin{equation}
+\begin{equation*}
 \lambda_f = (235 \pm 19)\text{ J/g}
-\end{equation}
+\end{equation*}
 Il valore di riferimento della letteratura scientifica ($\lambda_{\text{lit}} \approx 199\text{ J/g}$) è pienamente compatibile con l'intervallo di confidenza della misura effettuata, ricadendo all'interno della barra d'errore sperimentale.
 
 \subsection{Estrapolazione Grafica dei Background (Seconda Sessione)}
@@ -687,67 +687,67 @@ Il valore di riferimento della letteratura scientifica ($\lambda_{\text{lit}} \a
 
 \vspace{0.4cm}
 La massa netta $\Delta m$ evaporata a causa del solo effetto Joule della resistenza corrisponde alla differenza verticale tra le due rette di tendenza valutata all'istante mediano $t_m = 175.82\text{ s}$:
-\begin{equation}
+\begin{equation*}
 \Delta m = m_{\text{Fase I}}(t_m) - m_{\text{Fase III}}(t_m) = 1476.148\text{ g} - 1471.236\text{ g} = 4.912\text{ g}
-\end{equation}
+\end{equation*}
 
 \subsection{Propagazione dell'Incertezza sulla Massa (Seconda Sessione)}
 L'incertezza sulla massa estrapolata al tempo $t_m$ per ciascuna fase risente degli errori accoppiati dell'intercetta ($\Delta A$) e della pendenza ($\Delta B$) ricavati dal fit. Nel sistema di riferimento temporale adottato per l'analisi, si ottengono i seguenti contributi:
-\begin{align}
+\begin{align*}
 \Delta(\Delta m|_{\text{Fase I}}) &= \Delta A_1 + t_m \cdot \Delta B_1 = 0.015726 + 175.82 \cdot (2.5257 \times 10^{-4}) \approx 0.060\text{ g} \\
 \Delta(\Delta m|_{\text{Fase III}}) &= \Delta A_3 \approx 0.147\text{ g}
-\end{align}
+\end{align*}
 Essendo la Fase III interpolata rispetto alla variabile temporale traslata, l'incertezza all'istante mediano coincide direttamente con l'errore dell'intercetta $\Delta A_3$ calcolato dal software, escludendo l'allargamento fittizio a ventaglio causato dal fattore di proiezione lineare.
 
 L'errore assoluto complessivo sulla massa netta $\Delta(\Delta m)$ si ricava dalla somma diretta dei singoli contributi delle due regioni indipendenti:
-\begin{equation}
+\begin{equation*}
 \Delta(\Delta m) = \Delta(\Delta m|_{\text{Fase I}}) + \Delta(\Delta m|_{\text{Fase III}}) = 0.060\text{ g} + 0.147\text{ g} = 0.207\text{ g}
-\end{equation}
+\end{equation*}
 
 \subsection{Calcolo Finale del Calore Latente $\lambda_f$ (Seconda Sessione)}
 Utilizzando i parametri elettrici impostati sul generatore ($V = 8.3\text{ V}$, $I = 0.81\text{ A}$) e la durata effettiva della Fase II ($\Delta t = 125.50\text{ s}$), il valore centrale del calore latente di evaporazione dell'azoto liquido risulta:
-\begin{equation}
+\begin{equation*}
 \lambda_f = \frac{V \cdot I \cdot \Delta t}{\Delta m} = \frac{8.3\text{ V} \cdot 0.81\text{ A} \cdot 125.50\text{ s}}{4.912\text{ g}} \approx 171.76\text{ J/g}
-\end{equation}
+\end{equation*}
 
 Assumendo come incertezze strumentali della postazione di misura i valori $\Delta V = 0.1\text{ V}$, $\Delta I = 0.01\text{ A} $ e per il cronometro digitale la sensibilità di $\Delta(\Delta t) = 0.01\text{ s}$, si procede alla propagazione finale dell'errore assoluto $\Delta \lambda_f$:
-\begin{equation}
+\begin{equation*}
 \Delta \lambda_f = \lambda_f \left( \frac{\Delta V}{V} + \frac{\Delta I}{I} + \frac{\Delta(\Delta m)}{\Delta m} + \frac{\Delta(\Delta t)}{\Delta t} \right)
-\end{equation}
-\begin{equation}
+\end{equation*}
+\begin{equation*}
 \Delta \lambda_f = 171.76 \cdot \left( \frac{0.1}{8.3} + \frac{0.01}{0.81} + \frac{0.207}{4.912} + \frac{0.01}{125.50} \right) \approx 11.44\text{ J/g}
-\end{equation}
+\end{equation*}
 
 Arrotondando il risultato in conformità con le cifre significative dell'incertezza calcolata, la misura finale viene espressa come:
-\begin{equation}
+\begin{equation*}
 \lambda_f = (172 \pm 11)\text{ J/g}
-\end{equation}
+\end{equation*}
 \section{Calore specifico medio di Grafite e Piombo}
 \subsection{Metodologia di Calcolo dei Calori Specifici Medi}
 La determinazione sperimentale del calore specifico medio dei campioni di grafite e piombo si basa sul principio di conservazione dell'energia all'interno del sistema calorimetrico. Assumendo il vaso Dewar come un sistema adiabatico ideale, tutto il calore ceduto dal campione caldo durante il transitorio di raffreddamento viene interamente assorbito dall'azoto liquido, provocandone l'evaporazione. Il bilancio termico si esprime come:
-\begin{equation}
+\begin{equation*}
     Q_{\text{assorbito}} = Q_{\text{ceduto}}
-\end{equation}
+\end{equation*}
 
 Il calore assorbito dall'azoto liquido per l'evaporazione della massa netta $\Delta m_{\text{azoto}}$ (opportunamente depurata dal background termico ambientale tramite estrapolazione lineare) è legato al calore latente di evaporazione $\lambda_f$ misurato nella prima parte dell'esperienza:
-\begin{equation}
+\begin{equation*}
     Q_{\text{assorbito}} = \Delta m_{\text{azoto}} \cdot \lambda_f
-\end{equation}
+\end{equation*}
 
 Il calore ceduto dal corpo immerso, nel passaggio dalla temperatura ambiente $T_{\text{amb}}$ alla temperatura di ebollizione dell'azoto liquido $T_{\text{azoto}} \approx 77.3\text{ K}$, dipende dalla massa del campione $M_{\text{campione}}$ e dal suo calore specifico medio $c$ espresso in $\text{J}/(\text{g}\cdot\text{K})$:
-\begin{equation}
+\begin{equation*}
     Q_{\text{ceduto}} = M_{\text{campione}} \cdot c \cdot (T_{\text{amb}} - T_{\text{azoto}})
-\end{equation}
+\end{equation*}
 
 Uguagliando le due espressioni e isolando la capacità termica specifica del materiale, si ottiene la relazione fondamentale in unità del Sistema Internazionale:
-\begin{equation}
+\begin{equation*}
     c = \frac{\Delta m_{\text{azoto}} \cdot \lambda_f}{M_{\text{campione}} \cdot (T_{\text{amb}} - T_{\text{azoto}})}
-\end{equation}
+\end{equation*}
 
 Al fine di consentire un confronto diretto con i valori teorici integrati numericamente tramite lo script, è necessario convertire il risultato in calore specifico medio molare $C_m$, misurato in $\text{cal}/(\text{mol}\cdot\text{K})$. Introducendo la massa molare del materiale $W$ e il fattore di conversione equivalente del calore ($1\text{ cal} = 4.184\text{ J}$), la formula finale di calcolo applicata all'analisi dei dati risulta:
-\begin{equation}
+\begin{equation*}
     C_m = \frac{\Delta m_{\text{azoto}} \cdot \lambda_f}{M_{\text{campione}} \cdot (T_{\text{amb}} - T_{\text{azoto}})} \cdot \frac{W}{4.184}
-\end{equation}
+\end{equation*}
 
 
 
