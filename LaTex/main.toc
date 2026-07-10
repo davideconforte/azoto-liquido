@@ -16,7 +16,8 @@
 \contentsline {section}{\numberline {4}Calore specifico medio di Grafite e Piombo}{11}{}%
 \contentsline {subsection}{\numberline {4.1}Metodologia di Calcolo dei Calori Specifici Medi}{11}{}%
 \contentsline {subsection}{\numberline {4.2}Presentazione dei Dati e Analisi dei Calori Specifici}{12}{}%
-\contentsline {subsection}{\numberline {4.3}Estrapolazione Lineare delle Fasi e Calcolo della Massa Evaporata}{12}{}%
-\contentsline {subsection}{\numberline {4.4}Determinazione del Calore Specifico Molare}{13}{}%
-\contentsline {section}{\numberline {5}Analisi dati}{14}{}%
-\contentsline {section}{\numberline {6}Conclusioni}{14}{}%
+\contentsline {subsection}{\numberline {4.3}Calcolo della Massa Evaporata (Grafite)}{12}{}%
+\contentsline {subsection}{\numberline {4.4}Determinazione del Calore Specifico Molare (Grafite)}{14}{}%
+\contentsline {subsection}{\numberline {4.5}Seconda sessione (Grafite)}{14}{}%
+\contentsline {section}{\numberline {5}Analisi dati}{15}{}%
+\contentsline {section}{\numberline {6}Conclusioni}{15}{}%

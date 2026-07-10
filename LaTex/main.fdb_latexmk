@@ -1,9 +1,10 @@
 # Fdb version 4
-["pdflatex"] 1783618147.96546 "/home/davide/Desktop/Università/Anno_1/Semestre_2/Lab1/Relazione_Azoto/LaTex/main.tex" "main.pdf" "main" 1783618148.68064 0
+["pdflatex"] 1783681330.34624 "/home/davide/Desktop/Università/Anno_1/Semestre_2/Lab1/Relazione_Azoto/LaTex/main.tex" "main.pdf" "main" 1783681331.11022 0
   "../Grafici/Graficografite_1.png" 1783617134.0465 19186 a19bb2ece843ea93cf98edfbe9a403d2 ""
+  "../Grafici/Graficografite_2.png" 1783680110.92556 14901 703b7eb615dd6e503bbf9c4ac62925fa ""
   "../Grafici/Graficolatente_1.png" 1783350483.72022 21840 9d3487c1ecaeb3d7f16e3dbc4cd915e2 ""
   "../Grafici/Graficolatente_2.png" 1783430730.7584 21019 833fcac05324a86cbb52b2a73217991f ""
-  "/home/davide/Desktop/Università/Anno_1/Semestre_2/Lab1/Relazione_Azoto/LaTex/main.tex" 1783618146.92896 43558 c5fc92fab0ba1df81a13a2bbe36d2f25 ""
+  "/home/davide/Desktop/Università/Anno_1/Semestre_2/Lab1/Relazione_Azoto/LaTex/main.tex" 1783681329.29851 47140 f94289b5464059fff00017a33ae75b53 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1775415801 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1775415801 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -104,9 +105,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1775415801 43569 fd570f2fa160877d211e859f687312ba ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1783335036 5418909 d48fb256e573d3b961fb0e6b9b49cec7 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1783334950 3214053 e018f9aa035b8123fa81595096546028 ""
-  "main.aux" 1783618148.60836 5472 f002011dc3ff6715aef6df12b991e996 "pdflatex"
-  "main.tex" 1783618146.92896 43558 c5fc92fab0ba1df81a13a2bbe36d2f25 ""
-  "main.toc" 1783618148.61036 1975 ac940e3380b25b467d123ea68580a62e "pdflatex"
+  "main.aux" 1783681331.03353 6127 ad401d101dac5d0a3466094f8da4744f "pdflatex"
+  "main.tex" 1783681329.29851 47140 f94289b5464059fff00017a33ae75b53 ""
+  "main.toc" 1783681331.03553 2038 1b0208a7cd34dae7e8311f965b305a05 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
