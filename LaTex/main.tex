@@ -451,9 +451,8 @@ Infine, propagando gli errori per la grandezza $\lambda_f$ espressa come prodott
 \caption{Dati sperimentali della variazione di massa dell'azoto liquido, suddivisi analiticamente nelle tre fasi sequenziali dell'esperimento.}
 \label{tab:dati_fasi_confronto}
 \vspace{0.3cm}
-\footnotesize % Ottimizza lo spazio per l'allineamento orizzontale
+\footnotesize 
 
-% --- MINIPAGE FASE I ---
 \begin{minipage}[t]{0.31\textwidth}
 \centering
 \textbf{Fase I: Background Iniziale} \\
@@ -482,7 +481,6 @@ Infine, propagando gli errori per la grandezza $\lambda_f$ espressa come prodott
 \end{tabular}
 \end{minipage}
 \hfill
-% --- MINIPAGE FASE II ---
 \begin{minipage}[t]{0.33\textwidth}
 \centering
 \textbf{Fase II: Dissipazione} \\
@@ -520,7 +518,6 @@ Infine, propagando gli errori per la grandezza $\lambda_f$ espressa come prodott
 \end{tabular}
 \end{minipage}
 \hfill
-% --- MINIPAGE FASE III ---
 \begin{minipage}[t]{0.31\textwidth}
 \centering
 \textbf{Fase III: Background Finale} \\
@@ -592,7 +589,6 @@ La massa netta $\Delta m$ evaporata a causa del solo effetto Joule della resiste
 \end{equation*}
 \begin{figure}[htbp]
     \centering
-    % Regola la larghezza (0.85 o 0.9 della pagina è l'ideale per la leggibilità)
     \includegraphics[width=0.85\textwidth]{../Grafici/Graficolatente_1.png}
     
     \caption{\textbf{Andamento della massa in funzione del tempo ed estrapolazione dei background.} 
@@ -645,8 +641,7 @@ Il valore di riferimento della letteratura scientifica ($\lambda_{\text{lit}} \a
 \centering
 \caption{Dati sperimentali della variazione di massa dell'azoto liquido, suddivisi analiticamente nelle tre fasi sequenziali dell'esperimento.}
 \vspace{0.3cm}
-\footnotesize % Ottimizza lo spazio per l'allineamento orizzontale
-% --- MINIPAGE FASE I ---
+\footnotesize 
 \begin{minipage}[t]{0.31\textwidth}
 \centering
 \textbf{Fase I: Background Iniziale} \\
@@ -836,13 +831,14 @@ In questa sezione vengono presentati i dati raccolti durante l'immersione del ca
 
 Le proprietà fisiche del campione e delle condizioni al contorno misurate in laboratorio sono riassunte di seguito:
 \begin{itemize}
-    \item Massa del campione di grafite ($M_{\text{C}}$): $(17.17 \pm 0.01)\text{ g}$
+    \item Massa del campione di Grafite ($M_{\text{C}}$): $(17.17 \pm 0.01)\text{ g}$
+    \item Massa del campione di Piombo ($M_{\text{Pb}}$): $(38.48 \pm 0.01)\text{ g}$
     \item Temperatura ambiente ($T_{\text{amb}}$): $(293.0 \pm 0.1)\text{ K}$
     \item Temperatura dell'azoto liquido ($T_{\text{azoto}}$): $77.0\text{ K}$
     \item Massa molare della grafite ($M_{mol}$): $12.011\text{ g/mol}$
 \end{itemize}
 
-\subsection{Estrapolazione Lineare delle Fasi e Calcolo della Massa Evaporata}
+\subsection{Calcolo della Massa Evaporata (Grafite)}
 Per isolare la massa di azoto evaporata esclusivamente a causa del raffreddamento del blocco di grafite, i dati delle scale di background iniziali (Fase I) e finali (Fase III) sono stati interpolati tramite regressione lineare. Le rette ottenute sono state successivamente valutate in corrispondenza dell'istante mediano dell'immersione, individuato a $t_m = 355.575\text{ s}$.
 \begin{table}[htbp]
     \centering
@@ -958,13 +954,120 @@ L'incertezza associata a tale grandezza, ricavata tramite la propagazione degli 
     \caption{Andamento temporale della variazione di massa nel calorimetro. Le linee rette indicano i fit lineari di background estrapolati fino all'istante mediano dell'immersione $t_m = 355.575\text{ s}$.}
     \label{fig:grafico_grafite}
 \end{figure}
-\subsection{Determinazione del Calore Specifico Molare}
+\subsection{Determinazione del Calore Specifico Molare (Grafite)}
 Combinando i contributi di incertezza relativi della massa evaporata ($4.19\%$), del calore latente ($6.40\%$), della bilancia ($0.06\%$) e del termometro ($0.05\%$), si ottiene un'incertezza relativa complessiva pari al $10.69\%$. 
 
 Convertendo il risultato in unità termochimiche molari, si ricava il valore sperimentale finale del calore specifico medio della grafite nell'intervallo termico $[77, 293]\text{ K}$:
 \begin{equation*}
     C_{m, \text{Grafite}} = (1.20 \pm 0.13)\text{ cal}/(\text{mol}\cdot\text{K})
 \end{equation*}
+\subsection{Seconda sessione (Grafite)}
+Le rette di background iniziale (Fase I) e finale (Fase III) sono state estrapolate in corrispondenza dell'istante mediano $t_m = 152.7\text{ s}$.
+\begin{table}[htbp]
+    \centering
+    \footnotesize
+    \noindent
+    \begin{minipage}[t]{0.42\textwidth}
+        \centering
+        \textbf{Fase I e Transitorio} \\
+        \vspace{0.2cm}
+        \begin{tabular}{cc}
+            \hline
+            $t$ (s) & Massa (g) \\ \hline
+            0.00 & 1467.88 \\
+            20.32 & 1467.62 \\
+            40.46 & 1467.37 \\
+            60.13 & 1467.09 \\
+            80.19 & 1466.86 \\
+            100.31 & 1466.54 \\
+            120.25 & 1466.33 \\
+            140.12 & 1460.41 \ \ [IN] \\
+            145.36 & 1458.22 \\
+            150.16 & 1457.30 \\
+            155.35 & 1457.03 \\
+            161.86 & 1456.96 \\
+            165.28 & 1456.90 \ \ [EQ] \\ \hline
+        \end{tabular}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.54\textwidth}
+        \centering
+        \textbf{Fase III (Post-Immersione)} \\
+        \vspace{0.2cm}
+        \begin{tabular}{cc|cc}
+            \hline
+            $t$ (s) & Massa (g) & $t$ (s) & Massa (g) \\ \hline
+            170.41 & 1456.86 & 270.26 & 1456.04 \\
+            180.06 & 1456.77 & 280.33 & 1455.87 \\
+            200.09 & 1456.71 & 290.20 & 1455.77 \\
+            210.19 & 1456.62 & 300.34 & 1455.66 \\
+            220.25 & 1456.55 & 310.33 & 1455.50 \\
+            230.30 & 1456.46 & 320.24 & 1455.37 \\
+            240.28 & 1456.35 & 330.30 & 1455.27 \\
+            250.20 & 1456.24 & 340.42 & 1455.15 \\
+            260.32 & 1456.13 & 350.14 & 1454.99 \\ \hline
+        \end{tabular}
+    \end{minipage}
+    \caption{Dataset di tempo e massa raccolti durante la seconda prova sperimentale sul blocco di grafite.}
+    \label{tab:dati_grafite_2}
+\end{table}
+
+\vspace{0.2cm}
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \textbf{Regressione Lineare Fase I} \\
+    \textit{(Circuito Aperto - Iniziale)}
+    \begin{align*}
+        B_1 &= -0.013061 \text{ g/s} \\
+        A_1 &= 1467.885301 \text{ g} \\
+        \Delta B_1 &= 2.0054 \times 10^{-4} \text{ g/s} \\
+        \Delta A_1 &= 1.4504 \times 10^{-2} \text{ g}
+    \end{align*}
+    Valutazione:
+    \begin{equation*}
+        m_{\text{Fase I}}(t_m) = 1465.891\text{ g}
+    \end{equation*}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \textbf{Regressione Lineare Fase III} \\
+    \textit{(Circuito Aperto - Post-Immersione)}
+    \begin{align*}
+        B_3 &= -0.010694 \text{ g/s} \\
+        A_3 &= 1458.841890 \text{ g} \\
+        \Delta B_3 &= 3.5349 \times 10^{-4} \text{ g/s} \\
+        \Delta A_3 &= 9.5283 \times 10^{-2} \text{ g}
+    \end{align*}
+    Valutazione:
+    \begin{equation*}
+        m_{\text{Fase III}}(t_m) = 1457.209\text{ g}
+    \end{equation*}
+\end{minipage}
+
+\par\vspace{0.5cm} 
+\begin{center}
+    \nopagebreak 
+    \includegraphics[width=0.65\textwidth]{../Grafici/Graficografite_2.png}
+    \captionof{figure}{Andamento temporale della massa del secondo tentativo. Le linee indicano i fit di background estrapolati all'istante $t_m = 152.7\text{ s}$.}
+    \label{fig:grafico_grafite_2}
+\end{center}
+\vspace{0.4cm}
+
+
+La massa netta di azoto evaporato esclusivamente a causa del raffreddamento del campione è:
+\begin{equation*}
+    \Delta m_{\text{azoto}} = 1465.891\text{ g} - 1457.209\text{ g} = 8.682\text{ g}
+\end{equation*}
+L'incertezza associata risulta pari a $\Delta(\Delta m_{\text{azoto}}) = 0.194\text{ g}$.
+
+Propagando i contributi di incertezza, il valore sperimentale finale del calore specifico molare medio della grafite per questa seconda sessione è:
+\begin{equation*}
+    C_{m, \text{Grafite}} = (1.15 \pm 0.10)\text{ cal}/(\text{mol}\cdot\text{K})
+\end{equation*}
+
+
 
 
 
