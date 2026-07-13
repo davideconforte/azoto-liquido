@@ -835,7 +835,8 @@ Le proprietà fisiche del campione e delle condizioni al contorno misurate in la
     \item Massa del campione di Piombo ($M_{\text{Pb}}$): $(38.48 \pm 0.01)\text{ g}$
     \item Temperatura ambiente ($T_{\text{amb}}$): $(293.0 \pm 0.1)\text{ K}$
     \item Temperatura dell'azoto liquido ($T_{\text{azoto}}$): $77.0\text{ K}$
-    \item Massa molare della grafite ($M_{mol}$): $12.011\text{ g/mol}$
+    \item Massa molare della grafite ($M_{mol,C}$): $12.011\text{ g/mol}$
+    \item Massa molare del piombo ($M_{mol,Pb}$): $207.2\text{ g/mol}$
 \end{itemize}
 
 \subsection{Calcolo della Massa Evaporata (Grafite)}
@@ -1068,9 +1069,232 @@ Propagando i contributi di incertezza, il valore sperimentale finale del calore 
 \end{equation*}
 
 
+\subsection{Calcolo della Massa Evaporata (Piombo)}
+
+Per isolare la massa di azoto evaporata esclusivamente a causa del raffreddamento del
+blocco di piombo, i dati delle scale di background iniziali (Fase I) e finali (Fase III)
+sono stati interpolati tramite regressione lineare. Le rette ottenute sono state successivamente
+valutate in corrispondenza dell'istante mediano dell'immersione, individuato a $t_m$ = 321.835 s.
 
 
+\vspace{0.2cm}
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \textbf{Regressione Lineare Fase I} \\
+    \textit{(Circuito Aperto - Iniziale)}
+    \begin{align*}
+        B_1 &= -0.015640 \text{ g/s} \\
+        A_1 &= 1537.997919 \text{ g} \\
+        \Delta B_1 &= 2.1468 \times 10^{-4} \text{ g/s} \\
+        \Delta A_1 &= 3.5643 \times 10^{-2} \text{ g}
+    \end{align*}
+    Valutazione:
+    \begin{equation*}
+        m_{\text{Fase I}}(t_m) = 1532.964\text{ g}
+    \end{equation*}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \textbf{Regressione Lineare Fase III} \\
+    \textit{(Circuito Aperto - Post-Immersione)}
+    \begin{align*}
+        B_3 &= -0.010834 \text{ g/s} \\
+        A_3 &= 1537.494067 \text{ g} \\
+        \Delta B_3 &= 3.5113 \times 10^{-4} \text{ g/s} \\
+        \Delta A_3 &= 1.5886 \times 10^{-3} \text{ g}
+    \end{align*}
+    Valutazione:
+    \begin{equation*}
+        m_{\text{Fase III}}(t_m) = 1526.007\text{ g}
+    \end{equation*}
+\end{minipage}
+\vspace{0.4cm}
+\noindent
 
+La massa netta di azoto evaporato per l'apporto termico del solo campione si ricava dalla differenza tra le due estrapolazioni all'istante $t_m$:
+\begin{equation*}
+    \Delta m_{\text{azoto}} = m_{\text{Fase I}}(t_m) - m_{\text{Fase III}}(t_m) = 1532.964\text{ g} - 1526.007\text{ g} = 6,957\text{ g}
+\end{equation*}
+L'incertezza associata a tale grandezza, ricavata tramite la propagazione degli errori dei fit, risulta pari a $\Delta(\Delta m_{\text{azoto}}) = 0.377\text{ g}$ (corrispondente a un errore relativo del $5.42\%$).
+
+\noindent
+\begin{minipage}[t]{0.38\textwidth}
+    \centering
+    \textbf{Prima dell'Immersione (Fase I)} \\
+    \textit{Intervallo di background iniziale} \\
+    \vspace{0.3cm}
+    \begin{tabular}{cc}
+        \hline
+        $t$ (s) & Massa (g) \\ \hline
+        0.00 & 1538.20 \\
+        21.64 & 1537.59 \\
+        42.03 & 1537.31 \\
+        61.69 & 1536.98 \\
+        81.89 & 1536.66 \\
+        101.61 & 1536.36 \\
+        121.54 & 1536.06 \\
+        141.59 & 1535.76 \\
+        161.85 & 1535.50 \\
+        181.70 & 1535.18 \\
+        201.68 & 1534.88 \\
+        221.81 & 1534.56 \\
+        241.89 & 1534.15 \\
+        261.80 & 1533.95 \\
+        281.85 & 1533.60 \\
+        301.80 & 1533.24 \ \ [IN] \\ \hline
+    \end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.58\textwidth}
+    \centering
+    \textbf{Dopo l'Immersione (Fase III)} \\
+    \textit{Intervallo di equilibrio post-transitorio} \\
+    \vspace{0.3cm}
+    \begin{tabular}{cc}
+        \hline
+        $t$ (s) & Massa (g) \\ \hline
+        341.87 & 1525.60 \ \ [EQ] \\
+        351.48 & 1525.52 \\
+        361.54 & 1525.46 \\
+        371.92 & 1525.41 \\
+        381.50 & 1525.35 \\
+        391.51 & 1525.29 \\
+        401.54 & 1525.22 \\
+        411.70 & 1525.12 \\
+        432.10 & 1524.91 \\
+        453.08 & 1524.68 \\
+        473.56 & 1524.47 \\
+        493.89 & 1524.21 \\
+        514.16 & 1523.95 \\
+        534.26 & 1523.69 \\
+        554.64 & 1523.39 \\
+        574.87 & 1523.13 \\ \hline
+    \end{tabular}
+    \label{tab:dati_piombo}
+\end{minipage}
+
+
+MANCA IL GRAFICO!!!!!!
+
+
+\subsection{Determinazione del Calore Specifico Molare (Piombo)}
+
+Combinando i contributi di incertezza relativi della massa evaporata ($5.42\%$), del calore latente (6.40\%),
+della bilancia (0.03\%) e del termometro (0,05\%), si ottiene un'incertezza relativa complessiva pari a 11,9 \%.
+
+Convertendo il risultato in unità termodinamiche molari, si ricava il valore sperimentale finale del calore
+specifico medio del piombo nell'intervallo termico [77,293] K:
+
+\begin{equation*}
+    C_{m, \text{Piombo}} = (7.07 \pm 0.86)\text{ cal}/(\text{mol}\cdot\text{K})
+\end{equation*}
+\newpage
+\subsection{Seconda sessione (Piombo)}
+
+Le rette di background iniziale (Fase I) e finale (Fase III) sono state estrapolate in corrispondenza dell'
+istante medio $t_m$ = 197.7 s.
+
+\begin{table}[htbp]
+    \centering
+    \footnotesize
+    \noindent
+    \begin{minipage}[t]{0.42\textwidth}
+        \centering
+        \textbf{Fase I e Transitorio} \\
+        \vspace{0.2cm}
+        \begin{tabular}{cc}
+            \hline
+            $t$ (s) & Massa (g) \\ \hline
+            0.00 & 1471.91 \\
+            20.22 & 1471.71 \\
+            40.31 & 1471.47 \\
+            60.15 & 1471.21 \\
+            80.18 & 1470.98 \\
+            100.12 & 1470.74 \\
+            120.29 & 1470.48 \\
+            140.19 & 1470.21 \\
+            160.26 & 1469.97 \\
+            180.36 & 1469.53 \\
+            190.03 & 1466.46 \ \ [IN] \\
+            195.17 & 1465.09 \\
+            200.06 & 1463.77 \\
+            205.40 & 1462.67 \ \ [EQ] \\ \hline
+        \end{tabular}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.54\textwidth}
+        \centering
+        \textbf{Fase III (Post-Immersione)} \\
+        \vspace{0.2cm}
+        \begin{tabular}{cc|cc}
+            \hline
+            $t$ (s) & Massa (g) & $t$ (s) & Massa (g) \\ \hline
+            215.17 & 1459.73 & 315.22 & 1457.77 \\
+            225.10 & 1459.57 & 325.26 & 1457.57 \\
+            235.15 & 1459.34 & 335.34 & 1457.37 \\
+            245.24 & 1459.13 & 345.33 & 1457.17 \\
+            255.22 & 1458.91 & 355.26 & 1456.97 \\
+            265.17 & 1458.73 & 365.16 & 1456.77 \\
+            275.29 & 1458.53 & 375.29 & 1456.57 \\
+            285.20 & 1458.33 & 385.26 & 1456.37 \\
+            295.32 & 1458.14 & 395.27 & 1456.17 \\
+            305.21 & 1457.96 & 405.34 & 1455.95 \\ \hline
+        \end{tabular}
+    \end{minipage}
+    \caption{Dataset di tempo e massa raccolti durante la seconda prova sperimentale sul blocco di piombo.}
+    \label{tab:dati_piombo_2}
+\end{table}
+
+\vspace{0.2cm}
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \textbf{Regressione Lineare Fase I} \\
+    \textit{(Circuito Aperto - Iniziale)}
+    \begin{align*}
+        B_1 &= -0.012814 \text{ g/s} \\
+        A_1 &= 1471.976988 \text{ g} \\
+        \Delta B_1 &= 3.4319 \times 10^{-4} \text{ g/s} \\
+        \Delta A_1 &= 3.6714 \times 10^{-2} \text{ g}
+    \end{align*}
+    Valutazione:
+    \begin{equation*}
+        m_{\text{Fase I}}(t_m) = 1469.443\text{ g}
+    \end{equation*}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \textbf{Regressione Lineare Fase III} \\
+    \textit{(Circuito Aperto - Post-Immersione)}
+    \begin{align*}
+        B_3 &= -0.006691 \text{ g/s} \\
+        A_3 &= 1463.707139 \text{ g} \\
+        \Delta B_3 &= 2.2383 \times 10^{-4} \text{ g/s} \\
+        \Delta A_3 &= 5.9775 \times 10^{-2} \text{ g}
+    \end{align*}
+    Valutazione:
+    \begin{equation*}
+        m_{\text{Fase III}}(t_m) = 1462.384\text{ g}
+    \end{equation*}
+\end{minipage}
+
+\par\vspace{0.5cm} 
+MANCA GRAFICO!!!!!!!!!!!!
+
+
+La massa netta di azoto evaporato esclusivamente a causa del raffreddamento del campione è:
+\begin{equation*}
+    \Delta m_{\text{azoto}} = 1469.443\text{ g} - 1462.384\text{ g} = 7.059\text{ g}
+\end{equation*}
+L'incertezza associata risulta pari a $\Delta(\Delta m_{\text{azoto}}) = 0.209\text{ g}$.
+
+Propagando i contributi di incertezza, il valore sperimentale finale del calore specifico molare medio del piombo per questa seconda sessione è:
+\begin{equation*}
+    C_{m, \text{Piombo}} = (7.18 \pm 0.69)\text{ cal}/(\text{mol}\cdot\text{K})
+\end{equation*}
 
 
 
