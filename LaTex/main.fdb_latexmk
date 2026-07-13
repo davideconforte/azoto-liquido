@@ -1,11 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1783956828.27382 "/home/eddi/Desktop/Lab-Meccanica/azoto-liquido/LaTex/main.tex" "main.pdf" "main" 1783956828.81632 0
+["pdflatex"] 1783957397.09605 "/home/eddi/Desktop/Lab-Meccanica/azoto-liquido/LaTex/main.tex" "main.pdf" "main" 1783957397.66293 0
   "../Grafici/Graficografite_1.png" 1783947650.53717 19186 a19bb2ece843ea93cf98edfbe9a403d2 ""
   "../Grafici/Graficografite_2.png" 1783947650.53826 14901 703b7eb615dd6e503bbf9c4ac62925fa ""
   "../Grafici/Graficolatente_1.png" 1783947650.53826 21840 9d3487c1ecaeb3d7f16e3dbc4cd915e2 ""
   "../Grafici/Graficolatente_2.png" 1783947650.53826 21019 833fcac05324a86cbb52b2a73217991f ""
   "/etc/texmf/web2c/texmf.cnf" 1771968813.84324 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/eddi/Desktop/Lab-Meccanica/azoto-liquido/LaTex/main.tex" 1783956828.03562 57179 4eb5f5dfde74833e3d42ab2416f1f05b ""
+  "/home/eddi/Desktop/Lab-Meccanica/azoto-liquido/LaTex/main.tex" 1783957396.84266 57179 3c656bec9a4d0841a10c0fdc1e8220d8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -106,9 +106,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1772031694.36836 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1772031713 8213557 43cd8f209ca212202fad7d3a4d0f6a52 ""
-  "main.aux" 1783956828.77462 6615 b5c2516d569343c889abe9fe261eb748 "pdflatex"
-  "main.tex" 1783956828.03562 57179 4eb5f5dfde74833e3d42ab2416f1f05b ""
-  "main.toc" 1783956828.77462 2251 5c5ffbca9d5e153f72e245eccbd3ea83 "pdflatex"
+  "main.aux" 1783957397.62266 6615 b5c2516d569343c889abe9fe261eb748 "pdflatex"
+  "main.tex" 1783957396.84266 57179 3c656bec9a4d0841a10c0fdc1e8220d8 ""
+  "main.toc" 1783957397.62266 2251 5c5ffbca9d5e153f72e245eccbd3ea83 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
