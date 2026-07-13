@@ -22,5 +22,4 @@
 \contentsline {subsection}{\numberline {4.6}Calcolo della Massa Evaporata (Piombo)}{15}{}%
 \contentsline {subsection}{\numberline {4.7}Determinazione del Calore Specifico Molare (Piombo)}{16}{}%
 \contentsline {subsection}{\numberline {4.8}Seconda sessione (Piombo)}{17}{}%
-\contentsline {section}{\numberline {5}Analisi dati}{17}{}%
-\contentsline {section}{\numberline {6}Conclusioni}{17}{}%
+\contentsline {section}{\numberline {5}Conclusioni}{18}{}%
