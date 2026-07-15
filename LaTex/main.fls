@@ -143,6 +143,8 @@ OUTPUT main.toc
 OUTPUT main.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
+INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
@@ -168,13 +170,11 @@ INPUT ../Grafici/Graficolatente_2.png
 INPUT ../Grafici/Graficolatente_2.png
 INPUT ../Grafici/Graficolatente_2.png
 INPUT ../Grafici/Graficolatente_2.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT ../Grafici/Graficografite_1.png
 INPUT ../Grafici/Graficografite_1.png
 INPUT ../Grafici/Graficografite_1.png
 INPUT ../Grafici/Graficografite_1.png
 INPUT ../Grafici/Graficografite_1.png
-INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT ../Grafici/Graficografite_2.png
 INPUT ../Grafici/Graficografite_2.png
 INPUT ../Grafici/Graficografite_2.png

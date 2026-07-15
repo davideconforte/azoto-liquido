@@ -3,23 +3,24 @@
 \contentsline {section}{\numberline {2}Cenni teorici}{2}{}%
 \contentsline {subsection}{\numberline {2.1}Calore latente di vaporizzazione dell'azoto}{2}{}%
 \contentsline {subsection}{\numberline {2.2}Calore specifico medio}{3}{}%
-\contentsline {section}{\numberline {3}Determinazione del Calore Latente di Evaporazione dell'Azoto Liquido}{4}{}%
-\contentsline {subsection}{\numberline {3.1}Stima Preliminare della Potenza Termica e Dimensionamento Elettrico}{4}{}%
-\contentsline {subsection}{\numberline {3.2}Procedura di Misura a Tre Fasi}{5}{}%
-\contentsline {subsection}{\numberline {3.3}Analisi Dati: Il Metodo Grafico}{5}{}%
-\contentsline {subsection}{\numberline {3.4}Estrapolazione Grafica dei Background}{6}{}%
-\contentsline {subsection}{\numberline {3.5}Propagazione dell'Incertezza sulla Massa}{8}{}%
-\contentsline {subsection}{\numberline {3.6}Calcolo Finale del Calore Latente $\lambda _f$}{8}{}%
-\contentsline {subsection}{\numberline {3.7}Estrapolazione Grafica dei Background (Seconda Sessione)}{9}{}%
-\contentsline {subsection}{\numberline {3.8}Propagazione dell'Incertezza sulla Massa (Seconda Sessione)}{9}{}%
-\contentsline {subsection}{\numberline {3.9}Calcolo Finale del Calore Latente $\lambda _f$ (Seconda Sessione)}{10}{}%
-\contentsline {section}{\numberline {4}Calore specifico medio di Grafite e Piombo}{11}{}%
-\contentsline {subsection}{\numberline {4.1}Metodologia di Calcolo dei Calori Specifici Medi}{11}{}%
-\contentsline {subsection}{\numberline {4.2}Presentazione dei Dati e Analisi dei Calori Specifici}{12}{}%
-\contentsline {subsection}{\numberline {4.3}Calcolo della Massa Evaporata (Grafite)}{12}{}%
-\contentsline {subsection}{\numberline {4.4}Determinazione del Calore Specifico Molare (Grafite)}{14}{}%
-\contentsline {subsection}{\numberline {4.5}Seconda sessione (Grafite)}{14}{}%
-\contentsline {subsection}{\numberline {4.6}Calcolo della Massa Evaporata (Piombo)}{15}{}%
-\contentsline {subsection}{\numberline {4.7}Determinazione del Calore Specifico Molare (Piombo)}{16}{}%
-\contentsline {subsection}{\numberline {4.8}Seconda sessione (Piombo)}{17}{}%
-\contentsline {section}{\numberline {5}Conclusioni}{18}{}%
+\contentsline {section}{\numberline {3}Apparato Sperimentale}{4}{}%
+\contentsline {section}{\numberline {4}Determinazione del Calore Latente di Evaporazione dell'Azoto Liquido}{5}{}%
+\contentsline {subsection}{\numberline {4.1}Stima Preliminare della Potenza Termica e Dimensionamento Elettrico}{5}{}%
+\contentsline {subsection}{\numberline {4.2}Procedura di Misura a Tre Fasi}{5}{}%
+\contentsline {subsection}{\numberline {4.3}Analisi Dati: Il Metodo Grafico}{6}{}%
+\contentsline {subsection}{\numberline {4.4}Estrapolazione Grafica dei Background}{6}{}%
+\contentsline {subsection}{\numberline {4.5}Propagazione dell'Incertezza sulla Massa}{9}{}%
+\contentsline {subsection}{\numberline {4.6}Calcolo Finale del Calore Latente $\lambda _f$}{9}{}%
+\contentsline {subsection}{\numberline {4.7}Estrapolazione Grafica dei Background (Seconda Sessione)}{10}{}%
+\contentsline {subsection}{\numberline {4.8}Propagazione dell'Incertezza sulla Massa (Seconda Sessione)}{10}{}%
+\contentsline {subsection}{\numberline {4.9}Calcolo Finale del Calore Latente $\lambda _f$ (Seconda Sessione)}{11}{}%
+\contentsline {section}{\numberline {5}Calore specifico medio di Grafite e Piombo}{12}{}%
+\contentsline {subsection}{\numberline {5.1}Metodologia di Calcolo dei Calori Specifici Medi}{12}{}%
+\contentsline {subsection}{\numberline {5.2}Presentazione dei Dati e Analisi dei Calori Specifici}{13}{}%
+\contentsline {subsection}{\numberline {5.3}Calcolo della Massa Evaporata (Grafite)}{13}{}%
+\contentsline {subsection}{\numberline {5.4}Determinazione del Calore Specifico Molare (Grafite)}{15}{}%
+\contentsline {subsection}{\numberline {5.5}Seconda sessione (Grafite)}{15}{}%
+\contentsline {subsection}{\numberline {5.6}Calcolo della Massa Evaporata (Piombo)}{16}{}%
+\contentsline {subsection}{\numberline {5.7}Determinazione del Calore Specifico Molare (Piombo)}{17}{}%
+\contentsline {subsection}{\numberline {5.8}Seconda sessione (Piombo)}{18}{}%
+\contentsline {section}{\numberline {6}Conclusioni}{19}{}%
